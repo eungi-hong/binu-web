@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Binu — inclusive women's health</title>
+  <meta name="description" content="A safe, aesthetic space for women's health: anonymous forum, period & pregnancy tracking, education, supply requests, and emergency contacts." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><defs><linearGradient id='g' x1='0' x2='1' y1='0' y2='1'><stop offset='0' stop-color='%23f7b6c7'/><stop offset='1' stop-color='%23b8a4f0'/></linearGradient></defs><circle cx='32' cy='32' r='28' fill='url(%23g)'/><path d='M32 20c-7 8-11 13-11 19a11 11 0 0 0 22 0c0-6-4-11-11-19z' fill='%23fff'/></svg>" />
+</head>
+<body>
+  <div class="aurora" aria-hidden="true">
+    <span class="blob b1"></span>
+    <span class="blob b2"></span>
+    <span class="blob b3"></span>
+  </div>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#f9a8be"/>
+        <stop offset="1" stop-color="#b8a4f0"/>
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <header class="topbar">
+    <a href="#home" class="brand" data-route="home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="28" height="28"><defs><linearGradient id="lg" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#f7b6c7"/><stop offset="1" stop-color="#b8a4f0"/></linearGradient></defs><path d="M16 4c-6 7-10 12-10 17a10 10 0 0 0 20 0c0-5-4-10-10-17z" fill="url(#lg)"/></svg>
+      </span>
+      <span class="brand-text">Binu</span>
+    </a>
+    <nav class="nav" aria-label="primary">
+      <a href="#home" data-route="home">Home</a>
+      <a href="#forum" data-route="forum">Forum</a>
+      <a href="#period" data-route="period">Period</a>
+      <a href="#pregnancy" data-route="pregnancy">Pregnancy</a>
+      <a href="#herahub" data-route="herahub">HeraHub</a>
+      <a href="#supply" data-route="supply">Supply</a>
+      <a href="#emergency" data-route="emergency">Emergency</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
+      <span class="sun">☀</span><span class="moon">☾</span>
+    </button>
+  </header>
+
+  <main id="app">
+    <!-- Home -->
+    <section class="route" data-route="home" id="home">
+      <div class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Apollo 11 · Women's Health</p>
+          <h1>A tender, trustworthy space for <em>every</em> body.</h1>
+          <p class="lede">Binu brings an anonymous forum, period &amp; pregnancy tracking, real‑time education and emergency help together in one quiet, beautiful place.</p>
+          <div class="cta">
+            <a class="btn primary" href="#forum" data-route="forum">Visit the forum</a>
+            <a class="btn ghost" href="#period" data-route="period">Track my cycle</a>
+          </div>
+        </div>
+        <div class="hero-card" aria-hidden="true">
+          <div class="glass cycle-preview">
+            <div class="cycle-ring">
+              <svg viewBox="0 0 200 200">
+                <circle cx="100" cy="100" r="86" stroke="rgba(255,255,255,.4)" stroke-width="10" fill="none"/>
+                <circle id="heroRing" cx="100" cy="100" r="86" stroke="url(#ring)" stroke-width="10" fill="none" stroke-linecap="round" stroke-dasharray="540" stroke-dashoffset="160" transform="rotate(-90 100 100)"/>
+              </svg>
+              <div class="cycle-ring-label">
+                <span class="big" id="heroDay">Day 12</span>
+                <span class="small">Follicular phase</span>
+              </div>
+            </div>
+            <div class="cycle-meta">
+              <div><b>Next period</b><span id="heroNext">in 16 days</span></div>
+              <div><b>Fertile window</b><span id="heroFertile">Apr 23 – 28</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-grid">
+        <a class="feature" href="#forum" data-route="forum">
+          <div class="ic">💬</div>
+          <h3>Anonymous Forum</h3>
+          <p>Post, reply, and support — identity stays private; on‑device sentiment tags your post's tone.</p>
+        </a>
+        <a class="feature" href="#period" data-route="period">
+          <div class="ic">🌙</div>
+          <h3>Period Tracker</h3>
+          <p>Log cycles, symptoms and moods. See predictions with a soft, circular calendar.</p>
+        </a>
+        <a class="feature" href="#pregnancy" data-route="pregnancy">
+          <div class="ic">🤍</div>
+          <h3>Pregnancy</h3>
+          <p>Week‑by‑week milestones, fruit size, and gentle tips from your first day to delivery.</p>
+        </a>
+        <a class="feature" href="#herahub" data-route="herahub">
+          <div class="ic">📖</div>
+          <h3>HeraHub</h3>
+          <p>Curated articles from UN Women, HealthHub and more — updated on every visit.</p>
+        </a>
+        <a class="feature" href="#supply" data-route="supply">
+          <div class="ic">🎀</div>
+          <h3>Supply Requests</h3>
+          <p>Ask nearby peers for pads, tampons or pain relief — quietly and quickly.</p>
+        </a>
+        <a class="feature" href="#emergency" data-route="emergency">
+          <div class="ic">☎</div>
+          <h3>Emergency</h3>
+          <p>One‑tap access to verified helplines for medical, mental health, and safety needs.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Forum -->
+    <section class="route" data-route="forum" id="forum">
+      <header class="route-head">
+        <h2>Forum</h2>
+        <p>Share anonymously. Sentiment is detected on‑device to help readers respond with care.</p>
+      </header>
+
+      <form class="post-composer glass" id="postForm" autocomplete="off">
+        <input type="text" id="postTitle" placeholder="Give your post a title…" maxlength="120" required />
+        <textarea id="postBody" placeholder="Write what's on your mind. No names, no judgement." rows="4" required></textarea>
+        <div class="composer-bottom">
+          <div class="chips" id="postTagChips">
+            <button type="button" class="chip" data-tag="question">Question</button>
+            <button type="button" class="chip" data-tag="story">Story</button>
+            <button type="button" class="chip" data-tag="advice">Advice</button>
+            <button type="button" class="chip" data-tag="support">Support</button>
+          </div>
+          <div class="composer-actions">
+            <span class="sentiment-preview" id="sentimentPreview"></span>
+            <button class="btn primary" type="submit">Post</button>
+          </div>
+        </div>
+      </form>
+
+      <div class="filter-bar">
+        <div class="search"><input type="search" id="forumSearch" placeholder="Search posts…" /></div>
+        <div class="chips small">
+          <button class="chip filter active" data-filter="all">All</button>
+          <button class="chip filter" data-filter="positive">Positive</button>
+          <button class="chip filter" data-filter="neutral">Neutral</button>
+          <button class="chip filter" data-filter="negative">Needs support</button>
+        </div>
+      </div>
+
+      <div id="postList" class="post-list"></div>
+    </section>
+
+    <!-- Period Tracker -->
+    <section class="route" data-route="period" id="period">
+      <header class="route-head">
+        <h2>Period Tracker</h2>
+        <p>Log when your period starts. Binu learns your rhythm and shows the next cycle gently.</p>
+      </header>
+
+      <div class="period-grid">
+        <div class="glass panel period-summary">
+          <div class="cycle-ring big-ring">
+            <svg viewBox="0 0 220 220">
+              <circle cx="110" cy="110" r="96" stroke="rgba(255,255,255,.45)" stroke-width="12" fill="none"/>
+              <circle id="periodRing" cx="110" cy="110" r="96" stroke="url(#ring)" stroke-width="12" fill="none" stroke-linecap="round" transform="rotate(-90 110 110)"/>
+            </svg>
+            <div class="cycle-ring-label">
+              <span class="big" id="periodDay">—</span>
+              <span class="small" id="periodPhase">Log a period to begin</span>
+            </div>
+          </div>
+          <dl class="kv">
+            <div><dt>Cycle length</dt><dd id="periodCycleLen">—</dd></div>
+            <div><dt>Next period</dt><dd id="periodNext">—</dd></div>
+            <div><dt>Fertile window</dt><dd id="periodFertile">—</dd></div>
+            <div><dt>Ovulation</dt><dd id="periodOv">—</dd></div>
+          </dl>
+          <div class="row">
+            <button class="btn primary" id="logPeriodBtn">Log today as period start</button>
+            <button class="btn ghost" id="logPeriodCustomBtn">Pick a date…</button>
+          </div>
+        </div>
+
+        <div class="glass panel">
+          <div class="panel-head">
+            <h3>Calendar</h3>
+            <div class="month-nav">
+              <button class="icon-btn" id="prevMonth" aria-label="Previous month">‹</button>
+              <span id="monthLabel">—</span>
+              <button class="icon-btn" id="nextMonth" aria-label="Next month">›</button>
+            </div>
+          </div>
+          <div class="calendar" id="calendar"></div>
+          <div class="legend">
+            <span><i class="dot period"></i> Period</span>
+            <span><i class="dot predicted"></i> Predicted</span>
+            <span><i class="dot fertile"></i> Fertile</span>
+            <span><i class="dot ovulation"></i> Ovulation</span>
+          </div>
+        </div>
+
+        <div class="glass panel">
+          <h3>Today's log</h3>
+          <div class="mood-row" id="moodRow"></div>
+          <div class="symptom-row" id="symptomRow"></div>
+          <textarea id="noteInput" rows="3" placeholder="A note for future‑you (optional)…"></textarea>
+          <div class="row end">
+            <button class="btn primary" id="saveLogBtn">Save log</button>
+          </div>
+          <ul class="log-list" id="logList"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pregnancy Tracker -->
+    <section class="route" data-route="pregnancy" id="pregnancy">
+      <header class="route-head">
+        <h2>Pregnancy</h2>
+        <p>Enter your last menstrual period or due date — we'll show your week, baby's growth, and gentle tips.</p>
+      </header>
+
+      <div class="preg-grid">
+        <div class="glass panel preg-setup" id="pregSetup">
+          <h3>Start tracking</h3>
+          <label>First day of last period (LMP)
+            <input type="date" id="pregLmp" />
+          </label>
+          <p class="or">or</p>
+          <label>Estimated due date
+            <input type="date" id="pregDue" />
+          </label>
+          <div class="row end">
+            <button class="btn primary" id="pregSave">Begin</button>
+            <button class="btn ghost" id="pregClear" hidden>Reset</button>
+          </div>
+        </div>
+
+        <div class="glass panel preg-overview" id="pregOverview" hidden>
+          <div class="preg-week">
+            <span class="label">Week</span>
+            <span class="week" id="pregWeek">—</span>
+            <span class="trimester" id="pregTri">—</span>
+          </div>
+          <div class="preg-bar">
+            <div class="preg-fill" id="pregFill"></div>
+          </div>
+          <dl class="kv">
+            <div><dt>Due date</dt><dd id="pregDueOut">—</dd></div>
+            <div><dt>Days remaining</dt><dd id="pregDaysLeft">—</dd></div>
+            <div><dt>Baby size</dt><dd id="pregSize">—</dd></div>
+          </dl>
+          <div class="row">
+            <button class="btn ghost" id="pregReset">Edit dates</button>
+          </div>
+        </div>
+
+        <div class="glass panel preg-milestone" id="pregMilestone" hidden>
+          <h3 id="milestoneTitle">This week</h3>
+          <p id="milestoneBody"></p>
+          <div class="tips" id="milestoneTips"></div>
+        </div>
+
+        <div class="glass panel preg-checklist" id="pregChecklist" hidden>
+          <h3>Gentle to‑dos</h3>
+          <ul id="pregTodo"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- HeraHub -->
+    <section class="route" data-route="herahub" id="herahub">
+      <header class="route-head">
+        <h2>HeraHub</h2>
+        <p>Credible articles on women's health, relationships, and wellbeing.</p>
+      </header>
+      <div class="filter-bar">
+        <div class="chips small" id="heraFilters"></div>
+      </div>
+      <div class="hera-grid" id="heraGrid"></div>
+    </section>
+
+    <!-- Supply Requests -->
+    <section class="route" data-route="supply" id="supply">
+      <header class="route-head">
+        <h2>Supply Requests</h2>
+        <p>Quietly ask nearby peers for a pad, tampon, or pain relief. Requests auto‑expire after 30 minutes.</p>
+      </header>
+
+      <form class="glass panel supply-form" id="supplyForm">
+        <h3>New request</h3>
+        <div class="chips" id="supplyItems">
+          <button type="button" class="chip item" data-item="Pad">Pad</button>
+          <button type="button" class="chip item" data-item="Tampon">Tampon</button>
+          <button type="button" class="chip item" data-item="Liner">Liner</button>
+          <button type="button" class="chip item" data-item="Pain relief">Pain relief</button>
+          <button type="button" class="chip item" data-item="Heat pack">Heat pack</button>
+          <button type="button" class="chip item" data-item="Cup">Menstrual cup</button>
+        </div>
+        <label>Where should the helper meet you?
+          <input type="text" id="supplyLocation" placeholder="e.g. Level 2 library restroom" />
+        </label>
+        <label>Urgency
+          <select id="supplyUrgency">
+            <option value="low">Not urgent</option>
+            <option value="med" selected>Soon</option>
+            <option value="high">Urgent</option>
+          </select>
+        </label>
+        <div class="row end">
+          <button class="btn primary" type="submit">Broadcast quietly</button>
+        </div>
+      </form>
+
+      <div class="supply-list" id="supplyList"></div>
+    </section>
+
+    <!-- Emergency -->
+    <section class="route" data-route="emergency" id="emergency">
+      <header class="route-head">
+        <h2>Emergency Contacts</h2>
+        <p>Verified helplines for medical, mental health, and safety needs. Tap to call.</p>
+      </header>
+      <div class="chips small" id="emergencyFilters"></div>
+      <div class="emergency-grid" id="emergencyGrid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Binu is an educational project for women's health. Not a substitute for medical care.</p>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
