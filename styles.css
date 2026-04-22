@@ -184,6 +184,8 @@ label{display:flex;flex-direction:column;gap:6px;font-weight:500;font-size:.9rem
 .chips.small .chip{padding:5px 12px;font-size:.82rem}
 
 /* ---------- Forum ---------- */
+.banner{padding:12px 16px;margin-bottom:16px;font-size:.92rem;color:var(--mute);border-left:3px solid var(--rose-300)}
+.banner code{background:rgba(0,0,0,.08);padding:1px 6px;border-radius:4px;font-size:.88em}
 .post-composer{padding:22px;margin-bottom:22px}
 .post-composer input,.post-composer textarea{background:transparent;border:none;padding:8px 0;border-radius:0;border-bottom:1px dashed var(--line)}
 .post-composer input:focus,.post-composer textarea:focus{box-shadow:none;border-bottom-color:var(--rose-300)}

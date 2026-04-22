@@ -122,6 +122,8 @@
         <p>Share anonymously. Sentiment is detected on‑device to help readers respond with care.</p>
       </header>
 
+      <div class="banner glass" id="forumBanner" role="note" hidden></div>
+
       <form class="post-composer glass" id="postForm" autocomplete="off">
         <input type="text" id="postTitle" placeholder="Give your post a title…" maxlength="120" required />
         <textarea id="postBody" placeholder="Write what's on your mind. No names, no judgement." rows="4" required></textarea>
@@ -332,6 +334,6 @@
   </footer>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="app.js"></script>
+  <script type="module" src="js/main.js"></script>
 </body>
 </html>
